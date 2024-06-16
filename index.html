@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Mendeklarasikan dokumen sebagai HTML5 -->
+    <meta charset="UTF-8" />
+    <!-- Membuat tampilan halaman web responsif terhadap ukuran layar perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Judul halaman yang ditampilkan di tab browser -->
+    <title>Title</title>
+    <!-- Menghubungkan file CSS eksternal untuk styling halaman -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Kontainer utama yang membungkus seluruh konten dalam <body> -->
+    <div class="container">
+      <!-- Bagian header untuk logo dan navigasi -->
+      <header>
+        <!-- Judul tingkat dua yang digunakan untuk logo -->
+        <h2>Logo</h2>
+        <!-- Daftar tak berurutan untuk navigasi -->
+        <ul>
+          <!-- Item daftar dengan link aktif ke halaman Home -->
+          <li><a href="" class="active">Home</a></li>
+          <!-- Link ke halaman About -->
+          <li><a href="">About</a></li>
+          <!-- Link ke halaman Contact -->
+          <li><a href="">Contact</a></li>
+        </ul>
+      </header>
+      <!-- Bagian utama untuk konten halaman -->
+      <section>
+        <!-- Judul tingkat satu yang memberikan instruksi atau slogan -->
+        <h1>Find your self...</h1>
+        <!-- Kontainer untuk fitur pencarian -->
+        <div class="search">
+          <!-- Kotak input untuk memasukkan teks pencarian -->
+          <input type="text" placeholder="Search..." />
+          <!-- Ikon pencarian menggunakan SVG dengan atribut kelas untuk styling -->
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <!-- Mendefinisikan bentuk dari ikon SVG -->
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+            />
+          </svg>
+        </div>
+      </section>
+      <!-- Bagian untuk ikon navigasi ke bawah -->
+      <div class="down">
+        <!-- Ikon panah ke bawah menggunakan SVG -->
+        <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <!-- Mendefinisikan bentuk dari ikon panah ke bawah -->
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m8 7 4 4 4-4m-8 6 4 4 4-4"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
