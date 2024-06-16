@@ -1,0 +1,136 @@
+/* Mengatur gaya dasar untuk semua elemen */
+* {
+  font-family: Tahoma, Helvetica, Arial, sans-serif !important; /* Mengatur jenis font */
+  color: white; /* Warna teks */
+  margin: 0; /* Menghapus margin */
+  padding: 0; /* Menghapus padding */
+  box-sizing: border-box; /* Mengatur box-sizing */
+  text-decoration: none; /* Menghapus dekorasi teks */
+  list-style: none; /* Menghapus gaya list */
+  user-select: none; /* Mencegah teks dapat dipilih */
+}
+
+/* Mengatur container utama */
+.container {
+  display: block; /* Mengatur tipe display */
+  width: 100%; /* Lebar penuh */
+  height: 100vh; /* Tinggi penuh layar */
+  overflow: hidden; /* Sembunyikan konten yang meluap */
+
+  background-image: url(/bg.jpg); /* Gambar latar belakang */
+  background-position: center; /* Posisi gambar latar */
+  background-repeat: no-repeat; /* Gambar tidak diulang */
+  background-size: cover; /* Ukuran gambar menutupi seluruh elemen */
+}
+
+/* Mengatur header */
+header {
+  position: absolute; /* Posisi absolut */
+  display: flex; /* Flexbox untuk penataan */
+  width: 100%; /* Lebar penuh */
+  padding: 30px 50px; /* Padding */
+  justify-content: space-between; /* Distribusi ruang antar item */
+  align-items: center; /* Pusatkan item secara vertikal */
+}
+
+header h2 {
+  font-size: 32px; /* Ukuran font */
+}
+
+header ul {
+  display: flex; /* Flexbox untuk penataan */
+  gap: 1.5rem; /* Jarak antar item */
+}
+
+header ul a {
+  padding: 12px; /* Padding */
+  font-size: 20px; /* Ukuran font */
+  font-weight: hold; /* Ketebalan font (harusnya 'bold') */
+  background-color: transparent; /* Warna latar belakang */
+  border-radius: 30px; /* Radius border */
+  transition: 0.3s; /* Durasi transisi */
+}
+
+header ul a:hover,
+header ul a.active {
+  color: #b2ccb1; /* Warna teks saat hover atau aktif */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Warna latar belakang saat hover atau aktif */
+}
+
+/* Mengatur section */
+section {
+  display: flex; /* Flexbox untuk penataan */
+  width: 100%; /* Lebar penuh */
+  height: 100vh; /* Tinggi penuh layar */
+  flex-direction: column; /* Arah flex */
+  justify-content: center; /* Pusatkan konten secara vertikal */
+  align-items: center; /* Pusatkan konten secara horizontal */
+}
+
+section h1 {
+  font-size: 36px; /* Ukuran font */
+}
+
+/* Mengatur elemen pencarian */
+.search {
+  display: flex; /* Flexbox untuk penataan */
+  border: 3px solid white; /* Border */
+  width: 500px; /* Lebar */
+  border-radius: 30px; /* Radius border */
+  padding: 10px 15px; /* Padding */
+  justify-content: space-between; /* Distribusi ruang antar item */
+  margin-top: 70px; /* Margin atas */
+  transition: 0.3s; /* Durasi transisi */
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); /* Bayangan */
+}
+
+.search input {
+  background-color: transparent; /* Warna latar belakang */
+  width: 93%; /* Lebar */
+  color: white; /* Warna teks */
+  font-size: 20px; /* Ukuran font */
+  border: none; /* Menghapus border */
+  outline: none; /* Menghapus outline */
+}
+
+.search input::placeholder {
+  color: white; /* Warna placeholder */
+  filter: drop-shadow(
+    0 0 5px rgba(0, 0, 0, 0.3)
+  ); /* Bayangan pada placeholder */
+}
+
+.search svg {
+  cursor: pointer; /* Cursor pointer */
+}
+
+.search:focus-within {
+  transform: scale(1.04); /* Skala saat fokus */
+}
+
+/* Mengatur tombol panah ke bawah */
+.down {
+  position: absolute; /* Posisi absolut */
+  bottom: 25px; /* Posisi dari bawah */
+  left: 50%; /* Posisi dari kiri */
+  transform: translateX(-50%); /* Transformasi untuk sentralisasi */
+  transition: 0.4s; /* Durasi transisi */
+
+  border: 2px solid white; /* Border */
+  border-radius: 50%; /* Bentuk bulat */
+  cursor: pointer; /* Cursor pointer */
+}
+
+.down svg {
+  width: 40px; /* Lebar */
+  height: auto; /* Tinggi otomatis */
+}
+
+.down:hover {
+  bottom: 15px; /* Posisi dari bawah saat hover */
+}
